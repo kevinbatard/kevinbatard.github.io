@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('font/acherusgrotesque-regular-webfont.woff2') format('woff2'),
+         url('font/acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'acherusgrotesque-regular', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(60deg, #16213E, #61A4BC, #FE7E6D, #E94560);
+    background-size: 500%;
+    animation: gradientAnimation 5s ease infinite;
+    text-shadow: 2px 2px 10px white;
+    min-height: 500px;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% { 
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+.nom {
+    position: absolute;
+    left: 20%;
+    font-size: 30px;
+} 
+
+ .photo1 {
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    border-radius: 21px;
+    box-shadow: 2px 2px 10px white;
+}
+
+.adresse {
+    list-style-type: none;
+    position: absolute;
+    bottom: 35%;
+    left: 3%;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.icone_adress {
+    margin-right: 7px;
+    margin-top: 4px;
+}
+
+.mailto {
+    color: black;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 2px solid black;
+    width: 500px;
+    margin-left: 550px;
+    margin-top: 77px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+
+#content h2{
+    font-size: 19px;
+}
+
+#content li{
+    font-size: 17px;
+}
+
+.links {
+    position: absolute;
+    right: 10%;
+    top: 9%;
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.github {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.openclassroom {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.linkedin {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.foot1 {
+    position: absolute;
+    bottom: 150px;
+    color: black;
+}
+
+.foot2 {
+    position: absolute;
+    bottom: 130px;
+    color: black;
+}
