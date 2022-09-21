@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-* {
+html {
     font-family: 'acherusgrotesque-regular', Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +16,7 @@ body {
     animation: gradientAnimation 5s ease infinite;
     text-shadow: 2px 2px 10px white;
     min-height: 500px;
-    border: 3px solid white;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px black;
+
 }
 
 @keyframes gradientAnimation {
@@ -33,29 +31,49 @@ body {
     }
 } 
 
-.nom {
-    position: absolute;
-    left: 20%;
-    font-size: 30px;
-} 
-
- .photo1 {
-    position: absolute;
-    left: 2%;
-    top: 4%;
-    border-radius: 21px;
-    box-shadow: 2px 2px 10px white;
+#content {
+    display: flex;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+    min-width: auto;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.adresse {
-    list-style-type: none;
-    position: absolute;
-    bottom: 35%;
-    left: 3%;
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    box-shadow: 5px 5px 15px black;
+.photo:nth-child(2) {
+    order: 1;
+    margin: 15px;
+}
+
+.nom:nth-child(1) {
+    order: 2;
+    font-variant-caps: all-small-caps;
+    font-size: 40px;
+}
+
+#contact:nth-child(3) {
+    order: 3;
+    list-style: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+    height: 135px;
+    padding: 15px;
+    margin: auto;
+}
+
+#text:nth-child(4) {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+    height: 350px;
+    padding: 15px;
+    align-self: center;
+    margin: auto;
 }
 
 .icone_adress {
@@ -67,38 +85,12 @@ body {
     color: black;
 }
 
-#content {
+#social:nth-child(5) {
+    order: 5;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    border: 2px solid black;
-    width: 500px;
-    margin-left: 550px;
-    margin-top: 77px;
-    padding: 20px;
-    border: 2px solid white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px black;
-}
-
-#content h2{
-    font-size: 19px;
-}
-
-#content li{
-    font-size: 17px;
-}
-
-.links {
-    position: absolute;
-    right: 10%;
-    top: 9%;
-}
-
-.icone {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+    list-style: none;
+    align-self: center;
+    margin: auto;
 }
 
 .github {
@@ -119,14 +111,12 @@ body {
     height: 100px;
 }
 
-.foot1 {
-    position: absolute;
-    bottom: 150px;
+#foot:nth-child(6) {
+    order: 6;
+    margin-top: auto;
+}
+
+.thx {
     color: black;
 }
 
-.foot2 {
-    position: absolute;
-    bottom: 130px;
-    color: black;
-}
